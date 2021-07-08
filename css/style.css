@@ -1,0 +1,1031 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: fonte_menu;
+	src: url('../fontes/Caviar_Dreams_Bold.ttf'); 
+}
+
+
+body { 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b0ea91+0,32d14c+100 */
+background: #b0ea91; /* Old browsers */
+background: -moz-linear-gradient(top,  #b0ea91 0%, #32d14c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #b0ea91 0%,#32d14c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #b0ea91 0%,#32d14c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ea91', endColorstr='#32d14c',GradientType=0 ); /* IE6-9 */
+
+}
+
+#cabecalho_fundo {
+	width: 100%;
+	height: 100px;
+	border: solid 1px;
+	position: fixed;
+	top: 0px;
+
+}
+
+#cabecalho {
+	width: 100%;
+	height: 100px;
+	margin: auto;
+	border: solid 1px;
+	background-color: rgba(0,0,0,0.2); 
+	/*background-color: #D3D3D3;*/ 
+}
+
+#logo {
+	width: 200px;
+	height: 100px;	
+	float: left;
+	border: solid 1px;
+}
+
+
+
+
+#logo > a > img {
+	width: 100%;
+	height: 100%;	
+}
+
+#menu_principal {
+	width: 900px;
+	height: 50%;	
+	float: left;
+	margin-top: 20px;	
+	border: solid 1px; 
+	font-size: 18px;
+	position: center;
+	padding-left: 50px;
+	margin-left: 100px;
+}
+
+#menu_principal > ul {
+	margin-top: 12.5px;
+}
+
+#menu_principal > ul > li {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;	
+}
+
+#menu_principal > ul > li > a {
+	color: black; 
+	text-decoration: none;
+	transition: all 1s;
+
+}
+
+#menu_principal > ul > li > a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#busca {
+	width: 200px;
+	height: 100px;	
+	float: right;
+	border: solid 1px;
+	padding-top: 34px;
+}
+
+#login, #cadastro {
+	text-decoration: underline;
+	color: black;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+#destaque {
+	width: 100%;
+	height: 600px;
+	border: solid 1px;
+	padding: 1px;
+	background-size: cover;
+	background-image: url(../imagens/destaque9.png);
+}
+
+#central {
+	width: 20%;
+	height: 200px;
+	padding: 5px;
+	border-radius: 20px;
+	margin: auto;
+	margin-top: 200px;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	text-shadow: 1px 1px #000;
+	padding-top: 50px;
+	font-size: 20px;
+	font-family: fonte_menu;
+}
+
+#corpo { 
+	width: 100%;
+	height: 1100px;
+	border: solid 1px;
+}
+
+#corpo_tela_index {
+	width: 100%;
+	height: 2000px;
+	border: solid 1px;
+}
+
+#corpo_index {
+	max-width: 1200px;
+	height: 700px;
+	margin: auto;
+	border: solid 1px;
+	margin-top: 500px;
+	padding-left: 15px;
+	background-image: url(../imagens/fundo.png);
+	border-radius: 20px;
+}
+
+.passe {
+	width: 20%;	
+	height: 400px;
+	margin-left: 10px;
+	margin-top: 40px;
+	border: solid 1px;
+	float: left;
+	padding: 5px;
+	transition: all 500ms;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: 70px;
+	font-family: fonte_menu;
+}
+
+.passe > img {
+	width: 100%;
+	height: 50%;
+	border-radius: 5px;
+
+}
+#corpo_index > p {
+	height: 30%;
+	width: 100%;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	font-family: fonte_menu;
+	padding-top: 30px;
+	}
+
+
+body{
+	position: relative;
+}
+
+#telaEscura {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+}
+
+#modal {
+	width: 400px;
+	height: 300px;
+	position: fixed;
+	margin-left: -200px;
+	left: 50%;
+	top: 10%;
+	font-family: fonte_menu;
+	color: black;
+	border-radius: 10px;
+	text-align: center;
+	
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#93ffa0+0,7db9e8+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(147,255,160,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(147,255,160,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(147,255,160,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93ffa0', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+#fecharModal {
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+}
+
+
+#modal > form {
+	margin-top: 50px;
+}
+
+#modal > form > label {
+	font-size: 20px;
+}
+
+#modal > form > input {
+	margin-bottom: 30px;
+	width: 50%;
+}
+
+#modal > form > button {
+	width: 100px;
+	height: 30px;
+	margin-top: 20px;
+	border-radius: 10px;
+	
+}
+
+#telaCadastro {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+}
+
+
+#modalCadastro {
+	width: 400px;
+	height: 500px;
+	position: fixed;
+	margin-left: -200px;
+	left: 50%;
+	top: 10%;
+	font-family: fonte_menu;
+	color: black;
+	border-radius: 10px;
+	text-align: center;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#93ffa0+0,7db9e8+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(147,255,160,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(147,255,160,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(147,255,160,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93ffa0', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+#fecharModalCadastro {
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+}
+
+#modalCadastro > form {
+	margin-top: 50px;
+}
+
+
+#modalCadastro > form > label {
+	font-size: 20px;
+}
+
+#modalCadastro > form > input {
+	margin-bottom: 30px;
+	width: 50%;
+}
+
+#modalCadastro > form > button {
+	width: 100px;
+	height: 30px;
+	margin-top: 20px;
+	border-radius: 10px;
+	
+}
+
+
+#rodape {
+	width: 100%;
+	height: 100px;	
+	margin: auto;
+	border: solid 1px;
+}
+
+#social {
+	width: 300px;
+	height: 50px;
+	margin: auto;
+	text-align: center;		
+	border: solid 1px;
+} 
+
+#social > a > img {
+	width: 15%;
+	height: 100%;
+
+}
+
+
+#copyright {
+	width: 400px;
+	height: 50px;
+	margin: auto;	
+	border: solid 1px;
+	text-align: center;
+	padding: 5px;
+}
+
+/* TELA EQUIPES */
+
+#corpo_equipes {
+	height: 100%;
+	width: 95%;
+	margin: auto;
+	border-radius: 10px;
+	background-image: url(../imagens/fundo2.png);
+	overflow: scroll;
+
+}
+
+
+#corpo_equipes > p {
+	text-align: center;
+	margin-top: auto;
+	font-size: 25px;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	
+}
+
+
+
+
+#corpo_equipes > article {
+	width: 30%;
+	height: 300px;
+	margin-left: 30px;
+	border: solid 1px;
+	float: left; 
+	margin-top: 30px;
+	border-radius: 20%;
+
+}
+
+#corpo_equipes > article > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20%;
+}
+
+.fancybox > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20%;
+
+}
+
+#corpo_equipes > article > img:hover {
+
+-webkit-box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+
+	transform: rotate(360deg); 
+}
+
+/* TELA PERFIL */
+
+#corpo_perfil {
+	width: 100%;
+	height: 100%;
+	border: solid 5px;
+}
+
+#menu_perfil {
+	height: 40%;
+	width: 350px;
+	border: solid 1px;
+	float: left;
+	margin-left: 30px;
+	text-align: center;
+	position: center;
+	margin-top: 15px;
+
+}
+
+#menu_perfil > h3, h6 {
+	font-family: fonte_menu;
+}
+
+
+#menu_perfil > form {
+	width: 100%;
+	height: 100%;
+	border: solid 3px;
+}
+
+#simbolo, #equipe {
+	width: 100%;
+	height: 50px;
+	border: solid 1px;	
+	border-radius: 30px;
+	margin-top: 15px;
+
+}
+
+#questionario {
+	width: 100%;
+	height: 200px;
+	border: solid 1px;
+	margin-top: 20px;
+}
+
+#questionario > label {
+	font-size: 15px;
+	font-family: fonte_menu;
+}
+
+#questionario > input {
+	margin-top: 5px;
+	width: 80%;
+}
+
+#questionario > button {
+	width: 100px;
+	font-size: fonte_menu;
+	margin-top: 20px;
+	border-radius: 30px;
+}
+
+
+#impDadosMenu{
+	height: 600px;
+	width: 350px;
+	border: solid 1px;
+	float: left;
+	text-align: center;
+	position: center;
+	margin-top: 50px;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c6c6c6+1,c6c6c6+63,c6c6c6+63,bcbcbc+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(198,198,198,1) 0%, rgba(198,198,198,0.99) 1%, rgba(198,198,198,0.37) 63%, rgba(188,188,188,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(198,198,198,1) 0%,rgba(198,198,198,0.99) 1%,rgba(198,198,198,0.37) 63%,rgba(188,188,188,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(198,198,198,1) 0%,rgba(198,198,198,0.99) 1%,rgba(198,198,198,0.37) 63%,rgba(188,188,188,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6c6c6', endColorstr='#00bcbcbc',GradientType=0 ); /* IE6-9 */
+
+}
+
+#impDadosMenu > h5 {
+	font-size: 20px;
+	font-family: fonte_menu;
+	margin-top: 5px;
+}
+
+#impDadosMenu > button {
+	width: 100px;
+	font-size: fonte_menu;
+	margin-top: 5px;
+	border-radius: 30px;
+}
+
+#impDadosMenu > img {
+	width: 100%;
+	height: 180px;
+	border-radius: 30px;
+	margin-top: 10px;
+}
+
+
+
+#infPerfil {
+	height: 90%;
+	max-width: 70%;
+	border: solid 1px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 25px;
+	
+}
+
+#dadosImp {
+	width: 100%;
+	height: 20%;
+	border: solid 2px;
+}
+
+#dadosImp > h1 {
+	margin-left: 20px;
+	margin-top: 10px;
+	font-family: fonte_menu;
+
+}
+
+#dadosImp > p {
+	font-family: fonte_menu;
+	text-align: center;
+	margin-top: 5px;
+}
+
+
+#dadosAgenda {
+	width: 100%;
+	height: 80%;
+	border: solid 1px;
+	float: left; 
+	margin-top: 30px;
+	border-radius: 40px;
+	padding-left: 60px;
+	padding-top: 40px;
+	font-family: fonte_menu;
+	font-size: 15px;
+	overflow: scroll;
+}
+
+#dadosAgenda > b {
+	margin-top: 
+	color: white;
+}
+
+#titulo {
+	width: 100%;
+	height: 100px;
+	border: solid 2px;
+
+}
+
+#titulo > h1 {
+	text-align: center;
+	font-size: 40px;
+
+	text-shadow: 2px 2px 5PX #000;
+}
+
+
+
+/* TELA SOBRE */
+
+#corpo_sobre{
+	width: 80%;
+	height: 90%;
+	border: solid 1px;
+	margin: auto;
+	background-image: url(../imagens/fundo3.png);
+	border-radius: 15%; 
+	margin-top: 15px;
+}
+
+#apresentacao_sobre{
+	width: 100%;
+	height: 150px;
+	border: solid 1px;
+	text-align: center;
+}
+
+#apresentacao_sobre> h6 {
+	text-align: center;
+	font-size: 40px;
+	margin-top: 60px;
+	text-shadow: 2px 2px 5PX #000;
+
+}
+
+#informacao_sobre {
+	width: 100%;
+	height: 85%;
+	border: solid 1px;
+	padding-left: 150px;
+	padding-top: 100px;	
+
+
+}
+
+#informacao_sobre > img {
+	height: 20%;
+	width: 200px;
+	border-radius: 40%; 
+	float: right;
+	margin-right: 200px;
+
+			-webkit-box-shadow: 5px 5px5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    5px 5px5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         5px 5px5px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+/* TELA CAMPEONATOS */
+
+#corpo_campeonato {
+	width: 100%;
+	height: 1600px;
+	border: solid 5px;
+}
+
+#corpo_campeonato > div {	
+	width: 100%;
+	padding: 10px;
+}
+
+#corpo_campeonato > div > h1 {
+
+	text-align: center;
+	color: black;
+	font-size: 40px;
+	font-family: fantasy;
+	color: #2F4F4F;	
+}
+
+#corpo_campeonato > div > h2 {
+	
+	margin-left: 75px;
+	font-size: 30px;
+	font-family: fantasy;
+	padding: 10px;
+	margin-top: -70px;
+	color: #2F4F4F;	
+}
+
+#corpo_campeonato > div > p {
+
+	font-size: 20px;
+	font-family: cursive;
+	padding: 40px;
+	text-align: left;
+	color: #2F4F4F;	
+
+
+}
+
+ #tabelas {
+    width:100%;
+    height: 30%;
+    position: absolute;
+    border: solid 1px;
+
+ }
+
+.tabela_left {
+    
+    width:50%;
+	height: 500px;
+    float:left;
+   
+ }
+
+ .tabela_left > h2 {
+ 	padding: 5px;
+ 	text-align: center;
+ 	font-size: 40px;
+ 	color: #2F4F4F;		
+ 	
+
+
+ }
+
+ .tabela_left > table {
+ 	padding: 1px; 
+ 	background-color: #66CDAA;
+ 	font-family: serif;
+
+ }
+
+.tabela_right {
+   
+    width: 50%;
+    height: 500px;
+    float: right;
+    
+ }
+
+  .tabela_right > h2 {
+ 	padding: 5px;
+ 	text-align: center;
+ 	font-size: 40px;
+ 	color: #2F4F4F;	
+
+
+ }
+
+ .tabela_right > table {
+ 	padding: 1px; 
+ 	background-color: #66CDAA;
+ 	font-family: serif;
+ }
+
+/* TELA AGENDAMENTOS */
+
+#corpo_agendamento {
+ 	width: 100%;
+	height: 1500px;
+ }
+
+.apresentacao {
+	border: solid 1px;
+	padding: 1px;
+}
+
+.apresentacao > h1 {
+	padding: 10px;
+	text-align: center;
+	color: black;
+	font-size: 40px;
+	font-family: fantasy;
+	color: #2F4F4F;	
+}
+
+.apresentacao > p {
+	font-size: 20px;
+	font-family: cursive;
+	padding: 40px;
+	text-align: left;
+	color: #2F4F4F;	
+}
+
+
+.jogo {
+
+	width: 100%;
+	height: 300px;
+	margin:auto;
+	margin-top: 100px;
+	border: solid 1px;
+}
+
+
+
+.adicionarEquipe {	
+	float: left;
+	margin-top: 20px;
+	margin-left: 250px;	
+	border: solid 1px;
+	border-radius: 30%;
+
+	
+
+}
+
+.adicionarEquipe > a > img {
+	border-radius: 30%;
+}
+
+
+.imagemVs {	
+	width: 120px;
+	height: 120px;
+	margin-top: 10px;
+	margin: auto;	
+	max-width: 90%;
+	max-height: 90%;	
+	
+
+}
+
+.imagemVs > img {
+	width: 120px;
+	height: 120px;
+
+}
+#right {
+	float: right;
+}
+
+.selecione_e_botaoSalvar {
+	width: 300px;
+	height: 35px;
+;
+	float: left;
+	padding: 5px;
+	
+	border: solid 2px;
+
+}
+
+.selecione_e_botaoSalvar > select {
+	width: 200px;
+
+}
+
+.dataHorario {
+	width: 200px;
+	height: 150px;
+	margin: auto;
+	text-align: center;
+	font-family: cursive;
+
+}
+
+.dataHorario > input {
+	width: 200px;
+	height: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#btnSalvarAgendamento {
+	float: right;
+	margin-right: 150px;
+	border: solid 2px;
+	margin-top: 5px;
+
+}
+
+#btnSalvarAgendamento > button {
+	width: 100px;
+	height: 20px;
+	border-radius: 20%;
+}
+
+.jogoAgendado {
+	width: 80%;
+	height: 800px;
+	margin:auto;
+	margin-top: 40px;
+	border: solid 1px;
+}
+
+.jogoAgendado > h1 {
+	margin-top: 20px;
+	font-size: 40px; 
+	font-family: fantasy;
+	text-align: center;
+
+
+}
+
+.imagemVs2 {	
+	width: 100px;
+	height: 100px;
+	margin-top: 10px;
+	margin: auto;	
+	max-width: 90%;
+	max-height: 90%;	
+	
+
+}
+
+.imagemVs2 > img {
+	width: 100px;
+	height: 100px;
+
+}
+
+.selecione_e_botaoSalvar2 {
+	width: 400px;
+	height: 30px;
+	float: right;
+	padding: 5px;
+	margin-top: -70px;
+
+}
+
+.selecione_e_botaoSalvar2 > select {
+	width: 200px;
+
+}
+
+.selecione_e_botaoSalvar2 > button {
+	width: 100px;
+	float: right;
+
+}
+
+.dataHorario2 {
+
+	width: 200px;
+	height: 150px;
+	margin: auto;
+	text-align: center;
+	font-family: cursive;
+
+}
+
+.dataHorario2 > input {
+	width: 200px;
+	height: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#teste_imprimir {
+	width: 100%;
+	height: 80%;
+	border: solid 1px;
+	float: left; 
+	margin-top: 30px;
+	border-radius: 40px;
+	padding-left: 60px;
+	padding-top: 40px;
+	font-family: fonte_menu;
+	font-size: 15px;
+	background-color: rgba(0,0,0,0.3);
+	overflow: scroll;
+}
+
+
+/* TELA CONTATO */
+
+#corpo_contato {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.formulario {
+	width: 100%;
+	height: 1000px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#form1 {
+	width: 100%;
+	height: 250px;
+}
+
+#form1 > h1 {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 50px;
+	font-family: fantasy; 
+}
+
+#form1 > p {
+	font-size: 22px;
+	font-family: cursive;
+	padding: 40px;
+	text-align: center;
+}
+
+#form2 {
+	width: 40%;
+	height: 60%;
+	float: left;
+}
+
+#form2 > form {
+	margin-top: 20px;
+	margin-left: 90px;
+
+}
+
+#form2 > form > label {
+	
+
+	font-size: 20px;
+	font-family: cursive;
+
+}
+
+#form2 > form > input {
+	
+	width: 90%;
+	height: 25px;
+	padding: 5px;
+	font-family: cursive;
+	background-color: #DCDCDC;
+
+}
+
+#form2 > form > textarea {
+	background-color: #DCDCDC;
+	padding: 10px;
+	font-family: cursive;
+	
+}
+
+#form2 > form > button {
+	font-size: 20px;
+	margin-top: 10px;
+	font-family: cursive;
+} 
+
+#form3 {
+	width: 60%;
+	height: 60%;
+	float: right;
+}
+
+#form3 > img {
+	width: 44%;
+	height: 90%;
+	border-radius: 30px;
+	float: left;
+	margin-left: 25px;
+	margin-top: 20px;
+
+}
+
+/* CAMPO CADASTRO */
+
+#msgCadastro {
+	color: blue; 
+}
+
+@media all and (max-width: 1425px) { /* ADAPTAR LAYOUT A TELA */
+	#menu_principal {
+		width: 70px;
+		background-color: red;
+	}
+}
